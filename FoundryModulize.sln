@@ -7,9 +7,32 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoundryModulize.Tests", "Fo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScratchPad", "ScratchPad\ScratchPad.csproj", "{B85624C6-74D7-46E7-BA49-325A07C3C7A8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalogs", "Catalogs", "{36761535-FCB4-4525-B58A-4CD04FA74234}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoundryModulize.Core", "FoundryModulize.Core\FoundryModulize.Core.csproj", "{024B00E7-8DB6-4BC5-8DBF-B4153F70FB24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalogs", "Catalogs", "{4FBA1012-11E6-4155-837F-A593967C0B3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sulex-emporium", "sulex-emporium", "{7CDE42D0-4120-4A19-A221-466AAECCCE74}"
+	ProjectSection(SolutionItems) = preProject
+		Catalogs\sulex-emporium\sulex-ammo.cat = Catalogs\sulex-emporium\sulex-ammo.cat
+		Catalogs\sulex-emporium\sulex-armory.cat = Catalogs\sulex-emporium\sulex-armory.cat
+		Catalogs\sulex-emporium\sulex-consumable.cat = Catalogs\sulex-emporium\sulex-consumable.cat
+		Catalogs\sulex-emporium\sulex-loot.cat = Catalogs\sulex-emporium\sulex-loot.cat
+		Catalogs\sulex-emporium\sulex-magic-ammo.cat = Catalogs\sulex-emporium\sulex-magic-ammo.cat
+		Catalogs\sulex-emporium\sulex-magic-armor.cat = Catalogs\sulex-emporium\sulex-magic-armor.cat
+		Catalogs\sulex-emporium\sulex-magic-consumable.cat = Catalogs\sulex-emporium\sulex-magic-consumable.cat
+		Catalogs\sulex-emporium\sulex-magic-weapons.cat = Catalogs\sulex-emporium\sulex-magic-weapons.cat
+		Catalogs\sulex-emporium\sulex-magic.cat = Catalogs\sulex-emporium\sulex-magic.cat
+		Catalogs\sulex-emporium\sulex-mundane.cat = Catalogs\sulex-emporium\sulex-mundane.cat
+		Catalogs\sulex-emporium\sulex-transport.cat = Catalogs\sulex-emporium\sulex-transport.cat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sulex-monsters", "sulex-monsters", "{7510BDE6-1D20-4C0B-B787-E920755C5E5A}"
+	ProjectSection(SolutionItems) = preProject
+		Catalogs\sulex-monsters\sulex-beasts.cat = Catalogs\sulex-monsters\sulex-beasts.cat
+		Catalogs\sulex-monsters\sulex-monsters.cat = Catalogs\sulex-monsters\sulex-monsters.cat
+		Catalogs\sulex-monsters\sulex-named.cat = Catalogs\sulex-monsters\sulex-named.cat
+		Catalogs\sulex-monsters\sulex-npc.cat = Catalogs\sulex-monsters\sulex-npc.cat
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +55,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7CDE42D0-4120-4A19-A221-466AAECCCE74} = {4FBA1012-11E6-4155-837F-A593967C0B3A}
+		{7510BDE6-1D20-4C0B-B787-E920755C5E5A} = {4FBA1012-11E6-4155-837F-A593967C0B3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {037F6BD8-98C6-468D-B201-A07BCCD0AA32}

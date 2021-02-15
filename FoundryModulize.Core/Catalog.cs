@@ -65,5 +65,32 @@ namespace FoundryModulize.Core
 
             await File.WriteAllLinesAsync(Path.Combine(outputPath, moduleName, $"{catalogName}.cat"), output);
         }
+
+        public async Task GenerateCatalog(string moduleName, string packPath, string outputPath)
+        {
+            var dbFiles = Directory.EnumerateFiles(packPath);
+            var output = new List<string>();
+
+            Directory.CreateDirectory(Path.Combine(outputPath, moduleName));
+
+            foreach (var file in dbFiles)
+            {
+                var fileName = Path.GetFileNameWithoutExtension(file);
+
+                var lines = await File.ReadAllLinesAsync(file);
+             
+                output.Clear();
+
+                foreach (var val in lines)
+                {
+                    dynamic obj = JsonConvert.DeserializeObject<ExpandoObject>(val, new ExpandoObjectConverter());
+
+                    output.Add(obj.name);
+                }
+
+                await File.WriteAllLinesAsync(Path.Combine(outputPath, moduleName, $"{fileName}.cat"), output);
+
+            }
+        }
     }
 }

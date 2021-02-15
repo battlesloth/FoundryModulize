@@ -1,18 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.IO;
 using System.Linq;
-using System.Text.Json.Serialization;
+using System.Net.Mime;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using FoundryModulize.Core;
 using Newtonsoft.Json;
 
 namespace ScratchPad
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
+
+            var path = AppDomain.CurrentDomain.BaseDirectory;
+
+            var catPath = path.Replace(@"ScratchPad\bin\Debug\net5.0\", "") + "Catalogs";
+
+            var catalog = new Catalog();
+
+            await catalog.GenerateCatalog("sulex-spells", @"C:\Users\recto\Desktop\Modules\sulex-spells\packs", catPath);
+
+            return;
 
             var regex = new Regex(@"^\d+/\d+$");
             var dict = new Dictionary<string, string>();
