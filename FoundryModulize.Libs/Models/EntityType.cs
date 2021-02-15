@@ -1,4 +1,4 @@
-﻿namespace FoundryModulize.Models
+﻿namespace FoundryModulize.Libs.Models
 {
     public enum EntityType
     {

@@ -1,5 +1,5 @@
-using System;
-using FoundryModulize.Models;
+
+using FoundryModulize.Core.Models;
 using Newtonsoft.Json;
 using Xunit;
 
@@ -11,7 +11,7 @@ namespace FoundryModulize.Tests
         public void ManifestJsonTest()
         {
             var expected =
-                @"{""name"":""this-is-a-test"",""title"":""This is a Test"",""description"":""A manifest testiny"",""author"":""Ima Test"",""version"":""0.0.1"",""minimumCoreVersion"":""0.7.0""}";
+                @"{""name"":""this-is-a-test"",""title"":""This is a Test"",""description"":""A manifest testiny"",""author"":""Ima Test"",""version"":""0.0.1"",""minimumCoreVersion"":""0.7.0"",""compatibleCoreVersion"":null,""packs"":[]}";
 
             
              var manifest = new Manifest

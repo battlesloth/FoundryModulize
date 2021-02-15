@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoundryModulize", "FoundryModulize\FoundryModulize.csproj", "{A588ACEE-EECB-401A-A93F-3C092DC34402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoundryModulize.Tests", "FoundryModulize.Tests\FoundryModulize.Tests.csproj", "{541BFBE1-4125-4511-87B1-069567DA01E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoundryModulize.Tests", "FoundryModulize.Tests\FoundryModulize.Tests.csproj", "{541BFBE1-4125-4511-87B1-069567DA01E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScratchPad", "ScratchPad\ScratchPad.csproj", "{B85624C6-74D7-46E7-BA49-325A07C3C7A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScratchPad", "ScratchPad\ScratchPad.csproj", "{B85624C6-74D7-46E7-BA49-325A07C3C7A8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalogs", "Catalogs", "{36761535-FCB4-4525-B58A-4CD04FA74234}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoundryModulize.Core", "FoundryModulize.Core\FoundryModulize.Core.csproj", "{024B00E7-8DB6-4BC5-8DBF-B4153F70FB24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A588ACEE-EECB-401A-A93F-3C092DC34402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A588ACEE-EECB-401A-A93F-3C092DC34402}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A588ACEE-EECB-401A-A93F-3C092DC34402}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A588ACEE-EECB-401A-A93F-3C092DC34402}.Release|Any CPU.Build.0 = Release|Any CPU
 		{541BFBE1-4125-4511-87B1-069567DA01E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{541BFBE1-4125-4511-87B1-069567DA01E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{541BFBE1-4125-4511-87B1-069567DA01E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +25,10 @@ Global
 		{B85624C6-74D7-46E7-BA49-325A07C3C7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B85624C6-74D7-46E7-BA49-325A07C3C7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B85624C6-74D7-46E7-BA49-325A07C3C7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024B00E7-8DB6-4BC5-8DBF-B4153F70FB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024B00E7-8DB6-4BC5-8DBF-B4153F70FB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024B00E7-8DB6-4BC5-8DBF-B4153F70FB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024B00E7-8DB6-4BC5-8DBF-B4153F70FB24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

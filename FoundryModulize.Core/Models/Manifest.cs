@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 
-namespace FoundryModulize.Models
+namespace FoundryModulize.Core.Models
 {
     public class Manifest
     {
